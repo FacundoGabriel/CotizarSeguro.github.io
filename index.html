@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cotizador de seguros</title>
+</head>
+<body>
+    <div class="container">
+        <div class="tittle">
+            <h1>COTIZA TU SEGURO DE AUTO</h1>
+        </div>
+
+
+        
+            <form id="formulario" class="formulario">
+                <div class="marca">
+                    <label>Marca</label>
+                    <select id="marca" class="select">
+                        <option value="">- Seleccionar -</option>
+                        <option value="1">Americano</option>
+                        <option value="2">Asiatico</option>
+                        <option value="3">Europeo</option>
+                    </select>
+                </div>
+    
+                <div class="year">
+                    <label>Año</label>
+                    <select id="year" class="select">
+                    <option value="">- Seleccionar -</option>
+                    </select>
+                </div>
+    
+
+                <div class="tipo_seguro">
+                    <div class="tittle_legend">
+                        <legend class="legend">Tipo de seguro</legend>
+                       
+                    </div>
+                    <div class="seguros">
+                        <div class="seguro_basico">
+                            <label class="basico">básico</label>
+                            <input type="radio" name="tipo" id="" value="basico" checked>
+                        </div>
+            
+                        
+                        <div class="seguro_completo">
+                            <label class="completo">completo</label>
+                            <input type="radio" name="tipo" id="" value="completo">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="cargando" class="hidden">
+                    <div class="spinner">
+                        <div class="rect1"></div>
+                        <div class="rect2"></div>
+                        <div class="rect3"></div>
+                        <div class="rect4"></div>
+                        <div class="rect5"></div>
+                    </div>
+                </div>
+
+                <div class="resultado">
+                    <p></p>
+                </div>
+
+                <div class="btn_cotizar">
+                    <input type="submit" placeholder="Cotizar Seguro" value="Cotizar Seguro" id="btn_cotizar">
+                </div>
+            </form>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
